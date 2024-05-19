@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0yj7frtv7lyf"]
+[gd_scene load_steps=3 format=3 uid="uid://b0yj7frtv7lyf"]
 
 [ext_resource type="Script" path="res://src/main.gd" id="1_6d84c"]
+[ext_resource type="PackedScene" uid="uid://bstm6x3151l08" path="res://scenes/menu_button.tscn" id="2_vvjsd"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_6d84c")
@@ -12,3 +13,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.168627, 0.156863, 0.141176, 1)
+
+[node name="MenuButton" parent="." instance=ExtResource("2_vvjsd")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -43.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = 37.0
+grow_horizontal = 0
+
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
