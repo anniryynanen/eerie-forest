@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dcojk7erycka"]
 
-[ext_resource type="Script" path="res://src/esc_menu.gd" id="1_ix8ok"]
+[ext_resource type="Script" path="res://scenes/esc_menu.gd" id="1_ix8ok"]
 
 [node name="EscMenu" type="Control"]
 layout_mode = 3
