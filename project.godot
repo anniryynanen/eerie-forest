@@ -16,7 +16,8 @@ config/features=PackedStringArray("4.2", "Mobile")
 
 [autoload]
 
-Sounds="*res://scenes/sounds.tscn"
+Sounds="*res://scenes/global/sounds.tscn"
+Sprites="*res://scenes/global/sprites.tscn"
 
 [display]
 
@@ -25,4 +26,6 @@ window/size/viewport_height=720
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.168627, 0.156863, 0.141176, 1)
