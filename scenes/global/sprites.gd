@@ -1,3 +1,4 @@
+class_name Sprites
 extends Node
 ## Coordinates of sprites in the tile set
 

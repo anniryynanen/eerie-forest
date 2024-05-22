@@ -12,13 +12,13 @@ func _ready() -> void:
         -1 * tile_set.tile_size.y / 2)
 
     # Add a square of tiles to the map
-    var radius = 14
+    var radius: int = 14
     # Enumerate tiles in radius
     for q in range(-radius, radius + 1):
-        for r in range(max(-radius, -q - radius), min(radius, -q + radius) + 1):
+        for r in range(maxi(-radius, -q - radius), mini(radius, -q + radius) + 1):
             # Cut off top and bottom corner
-            var s = -q - r
-            if abs(r) + abs(s) > radius + 1:
+            var s: int = -q - r
+            if absi(r) + absi(s) > radius + 1:
                 continue
 
             tiles.append(Vector2i(q, r))

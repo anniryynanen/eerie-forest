@@ -17,7 +17,6 @@ config/features=PackedStringArray("4.2", "Mobile")
 [autoload]
 
 Sounds="*res://scenes/global/sounds.tscn"
-Sprites="*res://scenes/global/sprites.tscn"
 
 [display]
 
